@@ -1,0 +1,31 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Dropzone simple example</title>
+
+    <script src="~/Assets/js/dropzone.js"></script>
+    <link href="~/Assets/css/dropzone.css" rel="stylesheet" />
+
+</head>
+<body>
+    <p>
+        This is the most minimal example of Dropzone. The upload in this example
+        doesn't work, because there is no actual server to handle the file upload.
+    </p>
+    <!--<form action="/home/UploadFiles" class="dropzone dz-clickable"><div class="dz-default dz-message"><span>Drop files here to upload</span></div></form>
+
+    <input multiple="multiple" name="files" class="dz-hidden-input" style="visibility: hidden; position: absolute; top: 0px; left: 0px; height: 0px; width: 0px;" type="file"> -->
+
+    <form id="files" method="post" name="files" action="home/UploadFiles" class="dropzone"></form>
+
+
+
+
+    <!--<form asp-controller="Home" class="dropzone" name="files" asp-action="UploadFiles" method="post" enctype="multipart/form-data">
+
+        <input type="file" class="dz-hidden-input" name="files" multiple />
+    </form>-->
+</body>
+</html>
